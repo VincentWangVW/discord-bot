@@ -7,6 +7,7 @@ You can find tutorials about setting up a discord bot and getting the token, get
 put both tokens in a .env file like this:
 
 DISCORD_TOKEN=XXXXXXXXXXXXXXXXXXXXX
+
 YT_TOKEN=XXXXXXXXXXXXXXXXX
 
 For the playing audio in a voice channel to work, download ffmpeg. (tutorials online)
