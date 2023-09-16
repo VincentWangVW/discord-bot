@@ -6,9 +6,7 @@ A Discord bot created for my personal use because I felt like it would be nice t
 You can find tutorials about setting up a discord bot and getting the token, getting yotube token is also easy (find tutorial online)
 put both tokens in a .env file like this:
 
-DISCORD_TOKEN=XXXXXXXXXXXXXXXXXXXXX
-
-YT_TOKEN=XXXXXXXXXXXXXXXXX
+DISCORD_TOKEN=XXXXXXXXXXXXXXXXXXXXX\nYT_TOKEN=XXXXXXXXXXXXXXXXX
 
 For the playing audio in a voice channel to work, download ffmpeg. (tutorials online)
 
