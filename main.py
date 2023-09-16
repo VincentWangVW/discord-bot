@@ -1,7 +1,6 @@
 import asyncio
 import random
 import os
-import time
 import discord
 import requests
 from dotenv import load_dotenv
@@ -212,9 +211,9 @@ async def pickup(ctx):
     alongside a pickupline from a text document
     """
     mentioned_user = ctx.message.mentions[0]
-    await ctx.mentioned_user.send('hey~~')
+    await mentioned_user.send('hey~~')
     asyncio.sleep(7)
-    await ctx.mentioned_user.send('how are you doing...')
+    await mentioned_user.send('how are you doing...')
     asyncio.sleep(2)
     pickupline = open('files/pickuplines.txt', 'r')
     pickuplines = []
@@ -222,13 +221,13 @@ async def pickup(ctx):
     for x in temp:
         pickuplines.append(x)
     pickupline.close()
-    await ctx.mentioned_user.send(random.choice(pickuplines))
+    await mentioned_user.send(random.choice(pickuplines))
     asyncio.sleep(2)
-    await ctx.mentioned_user.send('hey did you like my pickup line?')
+    await mentioned_user.send('hey did you like my pickup line?')
     asyncio.sleep(2)
-    await ctx.mentioned_user.send('if not, here is another :)')
+    await mentioned_user.send('if not, here is another :)')
     asyncio.sleep(2)
-    await ctx.mentioned_user.send(random.choice(pickuplines))
+    await mentioned_user.send(random.choice(pickuplines))
     await mentioned_user.send(f'you just got hit on up by {ctx.author.mention}')
 
 
